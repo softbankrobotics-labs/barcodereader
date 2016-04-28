@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="0.0.0" uuid="barcodereader-4f8a56">
+ <names>
+  <name lang="en_US">barcodereader</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents/>
+</package>
