@@ -3,7 +3,10 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions />
     <Dialogs />
-    <Resources />
+    <Resources>
+        <File name="barcodereader" src="lib/barcodereader.py" />
+        <File name="zbar" src="lib/zbar.so" />
+    </Resources>
     <Topics />
     <IgnoredPaths />
 </Package>
