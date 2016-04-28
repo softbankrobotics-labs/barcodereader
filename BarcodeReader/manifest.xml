@@ -10,4 +10,7 @@
   <language>en_US</language>
  </descriptionLanguages>
  <contents/>
+ <services>
+  <service execStart="/usr/bin/python2 lib/barcodereader-service.py" name="BarcodeReader" autorun="true"/>
+ </services>
 </package>

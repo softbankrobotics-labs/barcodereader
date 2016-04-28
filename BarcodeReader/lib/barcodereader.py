@@ -1,18 +1,14 @@
-import os
-import sys
-import time
-
 import qi
 import zbar
 import Image
 
 import functools
 
-import stk.runner
-import stk.logging
+"""BarcodeReader
 
-
-class MyBarcodeReader:
+Class implementing NAOqi service named BarcodeReader.
+"""
+class BarcodeReader:
 	def __init__(self, qiapp):
 		self.session = qiapp.session
 		self.serviceName = self.__class__.__name__
@@ -33,7 +29,7 @@ class MyBarcodeReader:
 		# self.start()
 
 	def _connect_services(self):
-		"""Connect to all services required by MyBarcodeReader"""
+		"""Connect to all services required by BarcodeReader"""
 		self.logger.info('Connecting services...')
 		self.services_connected = qi.Promise()
 		services_connected_fut = self.services_connected.future()
@@ -151,6 +147,6 @@ class MyBarcodeReader:
 
 if __name__ == "__main__":
     """
-    Registers MyBarcodeReader as a naoqi service.
+    Registers BarcodeReader as a naoqi service.
     """
-    stk.runner.run_service(MyBarcodeReader)
+    stk.runner.run_service(BarcodeReader)
