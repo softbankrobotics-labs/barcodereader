@@ -95,14 +95,14 @@ class BarcodeReader:
 		self.logger.info('All signals have been binded')
 
 	def _getImage(self):
-		self.logger.info("Getting image...")
+		# self.logger.info("Getting image...")
 		pepperImage = self.vid.getImageRemote(self.videoClient)
 
 		if pepperImage is not None:
 			im = Image.fromstring("RGB", (pepperImage[0], pepperImage[1]), str(bytearray(pepperImage[6])))
 			im = im.convert('L')
 
-			self.logger.info("Analyzing image...")
+			# self.logger.info("Analyzing image...")
 			zImage = zbar.Image(im.size[0], im.size[1], 'Y800', im.tostring())
 
 			if self.scanner.scan(zImage) > 0:
