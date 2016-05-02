@@ -6,9 +6,6 @@
  <descriptions>
   <description lang="en_US">Awesome NAOqi barcode reader service!</description>
  </descriptions>
- <supportedLanguages>
-  <language>en_US</language>
- </supportedLanguages>
  <descriptionLanguages>
   <language>en_US</language>
  </descriptionLanguages>
