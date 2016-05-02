@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="barcodereader" version="0.0.1">
+<package uuid="barcodereader" version="0.1.0">
  <names>
   <name lang="en_US">BarcodeReader</name>
  </names>
@@ -14,9 +14,9 @@
  </descriptionLanguages>
  <contents/>
  <requirements>
-  <naoqiRequirement minVersion="2.4" maxVersion="2.4"/>
+  <naoqiRequirement maxVersion="2.4" minVersion="2.3"/>
  </requirements>
  <services>
-  <service execStart="/usr/bin/python2 lib/barcodereader-service.py" autorun="true" name="BarcodeReader"/>
+  <service name="BarcodeReader" execStart="/usr/bin/python2 lib/barcodereader.py" autorun="true"/>
  </services>
 </package>

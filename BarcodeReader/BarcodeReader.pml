@@ -8,5 +8,7 @@
         <File name="zbar" src="lib/zbar.so" />
     </Resources>
     <Topics />
-    <IgnoredPaths />
+    <IgnoredPaths>
+        <Path src=".metadata" />
+    </IgnoredPaths>
 </Package>
