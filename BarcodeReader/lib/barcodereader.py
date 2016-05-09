@@ -64,13 +64,16 @@ class BarcodeReader:
 			raise RuntimeError
 
 	def _set_parameters(self):
+		"""Set parameters required by BarcodeReader"""
 		self.logger.info('Setting parameters...')
 
 		# We're doing here a little cleaning
 		subscribers = self.vid.getSubscribers()
 		for sub in subscribers:
+			# Video client of the BarcodeReader service
 			if "BarcodeReader_python_client" in sub:
 				self.vid.unsubscribe(sub)
+			# Video client of the webpage of the "Product Information" app
 			elif "videoBuffer" in sub:
 				self.vid.unsubscribe(sub)
 
@@ -83,18 +86,21 @@ class BarcodeReader:
 		self.logger.info('Parameters have been set...')
 
 	def _create_signals(self):
+		"""Create signals and events required by BarcodeReader"""
 		self.logger.info('Creating required signals and events...')
 		self.onBarcodeDetected = qi.Signal()
 		# self.onBarcodeDetectedEvent = '{}/{}'.format(self.serviceName, 'BarcodeDetected')
 		# self.mem.declareEvent(self.onBarcodeDetectedEvent, self.serviceName)
 		self.logger.info('All signals have been created')
 
-	def _connect_signals(self):
-		self.logger.info('Binding signals and events...')
+	# def _connect_signals(self):
+	# """Bind signals and events required by BarcodeReader"""
+		# self.logger.info('Binding signals and events...')
 		# self.conID = self.onBarcodeDetected.connect(self._barcodeDetected)
-		self.logger.info('All signals have been binded')
+		# self.logger.info('All signals have been binded')
 
 	def _getImage(self):
+	"""Main loop to get and analyze an image"""
 		# self.logger.info("Getting image...")
 		pepperImage = self.vid.getImageRemote(self.videoClient)
 
