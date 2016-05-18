@@ -11,7 +11,7 @@
  </descriptionLanguages>
  <contents/>
  <requirements>
-  <naoqiRequirement maxVersion="2.4" minVersion="2.3"/>
+  <naoqiRequirement minVersion="2.3" maxVersion="2.4"/>
  </requirements>
  <services>
   <service name="BarcodeReader" execStart="/usr/bin/python2 lib/barcodereader.py" autorun="true"/>
