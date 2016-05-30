@@ -161,6 +161,8 @@ imagescanner_scan (zbarImageScanner *self,
 }
 
 static PyMethodDef imagescanner_methods[] = {
+    { "get_results",   (PyCFunction)imagescanner_get_results,
+      METH_VARARGS | METH_KEYWORDS, },
     { "set_config",   (PyCFunction)imagescanner_set_config,
       METH_VARARGS | METH_KEYWORDS, },
     { "parse_config", (PyCFunction)imagescanner_parse_config,
