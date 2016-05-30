@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2978809976/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2978809976.dir/build.make CMakeFiles/cmTryCompileExec2978809976.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2978809976.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2978809976.dir/CheckSymbolExists.c.o   -c /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec2978809976
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2978809976.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2978809976.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2978809976 -rdynamic 
+CMakeFiles/cmTryCompileExec2978809976.dir/CheckSymbolExists.c.o: dans la fonction « main »:
+CheckSymbolExists.c:(.text+0x16): référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2978809976] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec2978809976/fast] Erreur 2
+
+File /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2682122066/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2682122066.dir/build.make CMakeFiles/cmTryCompileExec2682122066.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2682122066.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2682122066.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2682122066
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2682122066.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2682122066.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2682122066 -rdynamic -lpthreads 
+/usr/bin/ld: ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2682122066] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-myfirsttoolchain/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec2682122066/fast] Erreur 2
+
+

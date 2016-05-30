@@ -1,0 +1,106 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1142484362/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1142484362.dir/build.make CMakeFiles/cmTryCompileExec1142484362.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1142484362.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1142484362.dir/CheckSymbolExists.c.o   -c /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1142484362
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1142484362.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1142484362.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1142484362 -rdynamic 
+CMakeFiles/cmTryCompileExec1142484362.dir/CheckSymbolExists.c.o: dans la fonction « main »:
+CheckSymbolExists.c:(.text+0x16): référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1142484362] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec1142484362/fast] Erreur 2
+
+File /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1151532769/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1151532769.dir/build.make CMakeFiles/cmTryCompileExec1151532769.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1151532769.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1151532769.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1151532769
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1151532769.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1151532769.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1151532769 -rdynamic -lpthreads 
+/usr/bin/ld: ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1151532769] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec1151532769/fast] Erreur 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3079091195/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3079091195.dir/build.make CMakeFiles/cmTryCompileExec3079091195.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3079091195.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3079091195.dir/CheckSymbolExists.c.o   -c /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3079091195
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3079091195.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3079091195.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3079091195 -rdynamic 
+CMakeFiles/cmTryCompileExec3079091195.dir/CheckSymbolExists.c.o: dans la fonction « main »:
+CheckSymbolExists.c:(.text+0x16): référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec3079091195] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec3079091195/fast] Erreur 2
+
+File /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec73197058/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec73197058.dir/build.make CMakeFiles/cmTryCompileExec73197058.dir/build
+make[1]: entrant dans le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+/usr/bin/cmake -E cmake_progress_report /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec73197058.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec73197058.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec73197058
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec73197058.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec73197058.dir/CheckFunctionExists.c.o  -o cmTryCompileExec73197058 -rdynamic -lpthreads 
+/usr/bin/ld: ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec73197058] Erreur 1
+make[1]: quittant le répertoire « /home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-sys-linux-x86_64/CMakeFiles/CMakeTmp »
+make: *** [cmTryCompileExec73197058/fast] Erreur 2
+
+
