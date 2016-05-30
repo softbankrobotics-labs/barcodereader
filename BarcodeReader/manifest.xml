@@ -1,19 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="barcodereader" version="0.1.0">
+<package uuid="barcodereader" version="1.0.1">
  <names>
   <name lang="en_US">BarcodeReader</name>
+  <name lang="en_US-x-scrald">BarcodeReader</name>
  </names>
  <descriptions>
-  <description lang="en_US">Awesome NAOqi barcode reader service!</description>
+  <description lang="en_US">NAOqi barcode reader service. 
+
+Reads EAN13, EAN128, Code39.
+
+To start scanning : BarcodeReader.start
+To stop scanning : BarcodeReader.stop
+Scan event: BarcodeReader.onBarcodeDetected(type, value)</description>
+  <description lang="en_US-x-scrald">NAOqi barcode reader service. 
+
+Reads EAN13, EAN128, Code39.
+
+To start scanning : BarcodeReader.start
+To stop scanning : BarcodeReader.stop
+Scan event: BarcodeReader.onBarcodeDetected(type, value)</description>
  </descriptions>
  <descriptionLanguages>
   <language>en_US</language>
  </descriptionLanguages>
  <contents/>
  <requirements>
-  <naoqiRequirement minVersion="2.3" maxVersion="2.4"/>
+  <naoqiRequirement maxVersion="2.4" minVersion="2.3"/>
+  <robotRequirement model="JULIETTE"/>
+  <robotRequirement model="NAO"/>
+  <robotRequirement model="ROMEO"/>
  </requirements>
  <services>
-  <service name="BarcodeReader" execStart="/usr/bin/python2 lib/barcodereader.py" autorun="true"/>
+  <service execStart="/usr/bin/python2 lib/barcodereader.py" autorun="true" name="BarcodeReader"/>
  </services>
 </package>

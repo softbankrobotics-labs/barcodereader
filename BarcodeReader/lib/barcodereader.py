@@ -76,18 +76,12 @@ class BarcodeReader:
         """
         self.logger.info('Setting parameters...')
 
-        # Just to be sure
-        subscribers = self.vid.getSubscribers()
-        for sub in subscribers:
-            # Video client of the BarcodeReader service
-            if "BarcodeReader_python_client" in sub:
-                self.vid.unsubscribe(sub)
-
         # Register a Video Module
         resolution = vision_definitions.kVGA # Image of 640*480px
         colorSpace = vision_definitions.kYuvColorSpace
         fps = 5
         self.videoClient = self.vid.subscribe("BarcodeReader_python_client", resolution, colorSpace, fps)
+        self.logger.info("registered to video as %s"%self.videoClient)
         self.vid.setParam(40, 1) # force auto focus
         self.logger.info('Parameters have been set...')
 
@@ -156,14 +150,23 @@ class BarcodeReader:
         Stops the service from getting and analyzing images.
         """
         if self.scanning:
-            self.logger.info("Stopping...")
+            try:
+                self.logger.info("Stopping...")
+            except:
+                pass
             try:
                 self.getImageTask.stop()
-                self.logger.info("Stopped.")
+                try:
+                    self.logger.info("Stopped.")
+                except:
+                    pass
                 self.scanning = False
             except RuntimeError as err:
-                self.logger.info("Can't stop {}".format(self.serviceName))
-                self.logger.warning(err)
+                try:
+                    self.logger.info("Can't stop {}".format(self.serviceName))
+                    self.logger.warning(err)
+                except:
+                    pass
 
     @qi.bind(paramsType=(), methodName="cleanup")
     def cleanup(self):
@@ -172,13 +175,22 @@ class BarcodeReader:
         and to unsubscribe it from the video device.
         """
         self.stop()
-        self.logger.info("Cleaning...")
+        try:
+            self.logger.info("Cleaning...")
+        except:
+            pass
         try:
             self.vid.unsubscribe(self.videoClient)
         except RuntimeError as err:
-            self.logger.info("Can't clean {}".format(self.serviceName))
-            self.logger.warning(err)
-        self.logger.info("End!")
+            try:
+                self.logger.info("Can't clean {}".format(self.serviceName))
+                self.logger.warning(err)
+            except:
+                pass
+        try:
+            self.logger.info("End!")
+        except:
+            pass
 
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------

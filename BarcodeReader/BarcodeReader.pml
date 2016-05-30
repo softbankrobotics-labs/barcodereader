@@ -6,6 +6,7 @@
     <Resources>
         <File name="barcodereader" src="lib/barcodereader.py" />
         <File name="zbar" src="lib/zbar.so" />
+        <File name="icon" src="icon.png" />
     </Resources>
     <Topics />
     <IgnoredPaths>
