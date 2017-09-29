@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 ##########################################################
 # Cause we need some more services !
-# Aldebaran Robotics (c) 2014 All Rights Reserved -
+# SoftBank Robotics (c) 2017 All Rights Reserved -
 ##########################################################
 
-__version__ = "1.0.0"
-__copyright__ = "Copyright 2016, Aldebaran Robotics"
+__version__ = "1.1.0"
+__copyright__ = "Copyright 2017, SoftBank Robotics"
 
 
 import sys
@@ -76,6 +76,13 @@ class BarcodeReader:
         """
         self.logger.info('Setting parameters...')
 
+        # Just to be sure
+        subscribers = self.vid.getSubscribers()
+        for sub in subscribers:
+            # Video client of the BarcodeReader service
+            if "BarcodeReader_python_client" in sub:
+                self.vid.unsubscribe(sub)
+
         # Register a Video Module
         resolution = vision_definitions.kVGA # Image of 640*480px
         colorSpace = vision_definitions.kYuvColorSpace
@@ -104,9 +111,10 @@ class BarcodeReader:
 
         if pepperImage is not None:
             # Convert the image
-            im = Image.fromstring("L", (pepperImage[0], pepperImage[1]), str(bytearray(pepperImage[6])))
+            # im = Image.fromstring("L", (pepperImage[0], pepperImage[1]), str(bytearray(pepperImage[6])))
+            im = Image.frombytes("L", (pepperImage[0], pepperImage[1]), str(bytearray(pepperImage[6])))
             # Analyze the image
-            zImage = zbar.Image(im.size[0], im.size[1], 'Y800', im.tostring())
+            zImage = zbar.Image(im.size[0], im.size[1], 'Y800', im.tobytes())
 
             # Check if a barcode is detected
             if self.scanner.scan(zImage) > 0:

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="barcodereader" version="1.0.1">
+<package version="1.1.0" uuid="barcodereader">
  <names>
   <name lang="en_US">BarcodeReader</name>
   <name lang="en_US-x-scrald">BarcodeReader</name>
@@ -25,12 +25,10 @@ Scan event: BarcodeReader.onBarcodeDetected(type, value)</description>
  </descriptionLanguages>
  <contents/>
  <requirements>
-  <naoqiRequirement maxVersion="2.4" minVersion="2.3"/>
+  <naoqiRequirement minVersion="2.5" maxVersion="2.5"/>
   <robotRequirement model="JULIETTE"/>
-  <robotRequirement model="NAO"/>
-  <robotRequirement model="ROMEO"/>
  </requirements>
  <services>
-  <service execStart="/usr/bin/python2 lib/barcodereader.py" autorun="true" name="BarcodeReader"/>
+  <service name="BarcodeReader" autorun="true" execStart="/usr/bin/python2 lib/barcodereader.py"/>
  </services>
 </package>

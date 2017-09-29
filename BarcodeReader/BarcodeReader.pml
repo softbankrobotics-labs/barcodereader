@@ -4,12 +4,10 @@
     <BehaviorDescriptions />
     <Dialogs />
     <Resources>
+        <File name="icon" src="icon.png" />
         <File name="barcodereader" src="lib/barcodereader.py" />
         <File name="zbar" src="lib/zbar.so" />
-        <File name="icon" src="icon.png" />
     </Resources>
     <Topics />
-    <IgnoredPaths>
-        <Path src=".metadata" />
-    </IgnoredPaths>
+    <IgnoredPaths />
 </Package>
