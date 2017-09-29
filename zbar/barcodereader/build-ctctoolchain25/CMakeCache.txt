@@ -230,8 +230,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 CMAKE_STRIP:FILEPATH=/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../bin/i686-aldebaran-linux-gnu-strip
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/cgossart/.local/share/qi/toolchains/ctctoolchain25/toolchain-ctctoolchain25.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/cgossart/.local/share/qi/toolchains/ctctoolchain25/toolchain-ctctoolchain25.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -499,8 +499,6 @@ BZIP2_SEARCHED:INTERNAL=TRUE
 BarcodeReader_INTERNAL:INTERNAL=FALSE
 BarcodeReader_NO_INSTALL:INTERNAL=FALSE
 BarcodeReader_SUBFOLDER:INTERNAL=
-//ADVANCED property for variable: CMAKE_AR
-CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-ctctoolchain25
 //Major version of cmake used to create the current loaded cache
@@ -519,7 +517,7 @@ CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
-CMAKE_CXX_FLAGS:INTERNAL= -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning -std=gnu++11
+CMAKE_CXX_FLAGS:INTERNAL= -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning -std=gnu++11
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
 CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
@@ -530,7 +528,7 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
-CMAKE_C_FLAGS:INTERNAL= -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning
+CMAKE_C_FLAGS:INTERNAL= -DI_AM_A_ROBOT --sysroot /home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot/ -pipe -fomit-frame-pointer -m32 -march=i686 -mssse3 -mfpmath=sse -finline-functions-called-once -finline-small-functions -falign-functions -falign-labels -falign-loops -falign-jumps -freorder-blocks -freorder-blocks-and-partition -freorder-functions -faggressive-loop-optimizations -ftree-vectorize -fpredictive-commoning
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
 CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
@@ -556,7 +554,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
-CMAKE_FIND_ROOT_PATH:INTERNAL=/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot
+CMAKE_FIND_ROOT_PATH:INTERNAL=/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot
 CMAKE_FRAMEWORK_PATH:INTERNAL=
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Unix Makefiles
@@ -570,8 +568,6 @@ CMAKE_HOME_DIRECTORY:INTERNAL=/home/cgossart/work/projects/barcodereader/zbar/ba
 CMAKE_INSTALL_PREFIX:INTERNAL=/
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
-//ADVANCED property for variable: CMAKE_LINKER
-CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -586,17 +582,9 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_MODULE_PATH:INTERNAL=/usr/local/share/cmake;/usr/local/share/cmake/qibuild/..
-//ADVANCED property for variable: CMAKE_NM
-CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
 CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
-//ADVANCED property for variable: CMAKE_OBJCOPY
-CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_OBJDUMP
-CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 CMAKE_PREFIX_PATH:INTERNAL=/home/cgossart/work/projects/barcodereader/zbar/barcodereader/build-ctctoolchain25/sdk;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/../../../../i686-aldebaran-linux-gnu/sysroot;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/acl;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/alsa;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/archive;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/attr;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/avahi;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/bfl;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/boost;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/bzip2;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/c_ares;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/cgos;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/chunkware_simple_dynamics;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/console_bridge;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/curl;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/dbus-1;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/dbus-glib-1;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/dl;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/eigen3;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/ffi;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/ffmpeg;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/flac;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/fuse;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/gdbm;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/glib2;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/gstreamer;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/gstreamer-farsight;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/gtest;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/iconv;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/icu;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/idn;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/jpeg;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/json-c;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libalmath;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libalmathinternal;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libasyncns;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libevent;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libftdi1;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/liblttng_ust;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libnaoqi;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libqi;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libqi-capi;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libtheora;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/libtool;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/liburcu;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/lttng_tools;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/lz4;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/octomap;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/ogg;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/opencore-amr;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/opencv2;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/openni2;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/openssl;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/opus;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/pam;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/pcre;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/png;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/pthread;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/pulseaudio;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/python;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/qiprobes;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/qt;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/rosbag;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/rt;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/samplerate;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/sndfile;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/soprano;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/soundtouch;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/speex;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/sqlite3;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/systemd;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/tbb;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/tcp-wrappers;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/telepathy-farsight;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/telepathy-glib;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/tiff;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/tinyxml;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/trousers;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/urg;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/usb_1;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/v4l;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/vo-aacenc;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/vo-amrwbenc;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/vorbis;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/xml2;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/xz_utils;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/zbar;/home/cgossart/work/lib/ctc-linux64-atom-2.5.2.74/zlib;/usr/local/share/cmake/qibuild/modules/
-//ADVANCED property for variable: CMAKE_RANLIB
-CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.5
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
@@ -624,10 +612,6 @@ CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_STRIP
-CMAKE_STRIP-ADVANCED:INTERNAL=1
-//uname command
-CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 DBUS-1_DEPENDS:INTERNAL=PTHREAD;RT

@@ -171,6 +171,8 @@ static PyMethodDef imagescanner_methods[] = {
       METH_VARARGS | METH_KEYWORDS, },
     { "scan",          (PyCFunction)imagescanner_scan,
       METH_VARARGS | METH_KEYWORDS, },
+    { "get_results", (PyCFunction)imagescanner_get_results,
+      METH_VARARGS | METH_KEYWORDS, },
     { NULL, },
 };
 
